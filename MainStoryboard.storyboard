@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bhJ-AY-4Vf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Receive View Controller-->
+        <scene sceneID="Eih-Fp-omV">
+            <objects>
+                <viewController id="x8a-kf-YCY" customClass="ReceiveViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YLY-JG-SkM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ttw-CQ-mH8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CL7-VY-YoH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L1b-hA-YEr">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="L1b-hA-YEr" id="kdq-vs-E0o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VTC-uZ-P8z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40" y="852"/>
+        </scene>
+        <!--SharingImagesDemo-->
+        <scene sceneID="wzb-y4-i2c">
+            <objects>
+                <viewController title="SharingImagesDemo" id="ccs-FR-SQa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wpm-GS-gB3"/>
+                        <viewControllerLayoutGuide type="bottom" id="vwl-iS-Gfm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rnd-Ai-hoD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuR-jp-kdX">
+                                <rect key="frame" x="137" y="97" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="f51-JS-Ckg" kind="show" id="jMM-HF-xaz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEK-LZ-5Jo">
+                                <rect key="frame" x="137" y="188" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="x8a-kf-YCY" kind="show" id="hLk-zT-q54"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QaO-Ec-AFM"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CeW-ns-UNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="331"/>
+        </scene>
+        <!--Send View Controller-->
+        <scene sceneID="RHy-oa-FQb">
+            <objects>
+                <viewController id="f51-JS-Ckg" customClass="SendViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vuh-hm-Xho"/>
+                        <viewControllerLayoutGuide type="bottom" id="7aP-gA-Ybb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BuD-md-yvi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dZU-RZ-W5s">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="431"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONS-MT-ToD">
+                                <rect key="frame" x="137" y="439" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendImage:" destination="f51-JS-Ckg" eventType="touchUpInside" id="aEy-UF-olZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="dZU-RZ-W5s" id="sa8-uw-Gyq"/>
+                        <outlet property="sendImageButton" destination="ONS-MT-ToD" id="tLP-Ta-op1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWv-fG-hQW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397" y="331"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CCe-Aw-zoY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bhJ-AY-4Vf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bdv-rn-ldf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ccs-FR-SQa" kind="relationship" relationship="rootViewController" id="5IN-Rs-6KE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="64v-Mh-jeo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-781" y="331"/>
+        </scene>
+    </scenes>
+</document>
